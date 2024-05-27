@@ -2,17 +2,9 @@
 load('test_cases\hardcoded_IK_setup_MM50_SJ2.mat')
 
 %%
-ik_fun = @ik_mm50_rev0;
+ik_fun = @ik_mm50_rev3;
 %%
-ik_fun = @ik_mm50_rev1;
-%%
-ik_fun = @ik_mm50_rev2;
-%%
-ik_fun = @ik_mm50_rev0_mex;
-%%
-ik_fun = @ik_mm50_rev1_mex;
-%%
-ik_fun = @ik_mm50_rev2_mex;
+ik_fun = @ik_mm50_rev3_mex;
 %% Single pose
 i =1
 %% Find a missed soln
@@ -37,9 +29,9 @@ xline(S_list(i).q(1), 'r--'); hold off
 S_list(i).q - q
 
 %% Compile to MEX
-codegen -report ik_mm50_rev2.m -args {P.R, P.T, SEW, P.psi, kin, false}
+codegen -report ik_mm50_rev3.m -args {P.R, P.T, SEW, P.psi, kin, false}
 %% Compile to MEX
-codegen -report ik_mm50_rev1.m -args {P.R, P.T, SEW, P.psi, kin, false} -profile
+codegen -report ik_mm50_rev3.m -args {P.R, P.T, SEW, P.psi, kin, false} -profile
 %% Timing test
 
 %% Compile timing test to MEX
