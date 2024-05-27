@@ -1,4 +1,11 @@
 # 1D Search Improvements
+
+| Revision | Note                     | % Correct | Time (us) |
+|----------|--------------------------|-----------|-----------|
+| 0        |                          | 89        | 1235.55   |
+| 1        | Search over 2/4 branches | 89        | 800.56    |
+
+
 ## Goal
 100% empirical success rate in finding all solutions for Motoman SIA50D parameterized by SEW angle in a realistic workspace at > 100 Hz
 (Shoulder at joint 2)
