@@ -1,9 +1,10 @@
 # 1D Search Improvements
 
-| Revision | Note                     | % Correct | Time (us) |
-|----------|--------------------------|-----------|-----------|
-| 0        |                          | 89        | 1235.55   |
-| 1        | Search over 2/4 branches | 89        | 800.56    |
+| Revision | Note                                                 | % Correct | Time (us) |
+|----------|--------------------------                            |-----------|-----------|
+| 0        |                                                      | 89        | 1235.55   |
+| 1        | Search over 2/4 branches                             | 89        | 800.56    |
+| 2        | LS solns, increase cross thresh, decrease search tol | 99.8      | 1158.93  |
 
 
 ## Goal
