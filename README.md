@@ -1,12 +1,16 @@
 # 1D Search Improvements
 
 | Revision | Note                                                 | % Correct | Time (us) |
-|----------|--------------------------                            |-----------|-----------|
+|----------|------------------------------------------------------|-----------|-----------|
 | 0        |                                                      | 89        | 1235.55   |
 | 1        | Search over 2/4 branches                             | 89        | 800.56    |
-| 2        | LS solns, increase cross thresh, decrease search tol | 99.8      | 1158.93  |
-| 3        | Cut intial samples from 1e3 to 500                   | 99.8      | 656.318  |
-
+| 2        | LS solns, increase cross thresh, decrease search tol | 99.8      | 1158.93   |
+| 3        | Cut intial samples from 1e3 to 500                   | 99.8      | 656.318   |
+| 3*       | * Increase test cases from 1,000 to 10,000           | 99.78     | 735.829   |
+| 4        | Simplify zero cross detection code, fix NaN branches | 99.78     | 715.402   |
+| 5        | Find local min / max for each triangle pointing to 0 | 100       | 754.681   |
+| 5*       | * Increase test cases from 10,000 to 100,000         | 99.999    | 791.278   |
+| 6        | Decrease samples from 500 to 250 (10,000 test cases) | 100       | 497.381   |
 
 
 

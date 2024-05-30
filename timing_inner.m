@@ -1,7 +1,8 @@
 function [T_avg, Q_testing] = timing_inner(P_list)
-ik_fun = @ik_mm50_rev3;
-%N = 10e3;
-N=1000;
+ik_fun = @ik_mm50_rev6;
+% N = 100e3;
+N = 10e3;
+% N=1000;
 % Q_testing = NaN(7,16, N);
 Q_testing = NaN(7,64, N);
 

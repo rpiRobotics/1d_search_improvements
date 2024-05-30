@@ -1,11 +1,11 @@
-%% Generate 1,000 test cases
+%% Generate test cases
 % Random joint angles
 % Redundancy is parameterized by conventional SEW angle
 %     Shoulder is at joint 2
 %     Reference vector is rot(ey,-pi/4)*ez
 % Save both q and (R,T, psi) to MAT and CSV files
 
-N = 1e3;
+N = 100e3;
 
 file_location = "test_cases/";
 
