@@ -1,4 +1,5 @@
 # 1D Search Improvements
+![image](https://github.com/rpiRobotics/1d_search_improvements/assets/4022499/75dfaaf5-e26f-4319-9e3f-493f75fb8430)
 
 | Revision | Note                                                 | % Correct | Time (us) |
 |----------|------------------------------------------------------|-----------|-----------|
