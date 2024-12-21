@@ -59,7 +59,9 @@ ylabel("Error ||\Delta q||")
 
 %%
 
-semilogy(sort(errs_rev0), 'kx'); hold on
-semilogy(sort(errs_rev5), 'rx'); hold off
+semilogy(sort(errs_rev0), 'k-x'); hold on
+semilogy(sort(errs_rev6), 'r-x'); hold off
 xlabel("Solution # (in order)")
-ylabel("Error ||\Delta q||")
+ylabel("Error ||\Deltaq|| (rad)")
+legend("Revision 0", "Revision 6")
+title("Sorted Solution Errors")

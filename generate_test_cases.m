@@ -5,7 +5,7 @@
 %     Reference vector is rot(ey,-pi/4)*ez
 % Save both q and (R,T, psi) to MAT and CSV files
 
-N = 100e3;
+N = 10e3;
 
 file_location = "test_cases/";
 
@@ -40,6 +40,7 @@ function [T, P_list, S_list] = get_table(setup, N)
         [P, S] = setup.setup;
         P_CSV.R = P.R;
         P_CSV.T = P.T;
+        P_CSV.psi = P.psi;
         M(i,:) = [get_table_row(P_CSV) get_table_row(S)];
         P_list(i) = P;
         S_list(i) = S;
