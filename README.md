@@ -43,3 +43,22 @@ There are still a number of strategies that may improve 1D search performance ev
  *  Use intelligent global optimization algorithms (not uniform sampling)
  *  Search for endpoints
      *  Or find endpoints analytically 
+
+## C++ Results
+
+Similar changes were made to the C++ code in the main IK-Geo repository.
+
+Timing is much slower for C++ (but still faster than the stretch goal).
+It's possible that the testing method is what's slowing down the code.
+
+| Revision | Note                                                 | % Correct | Time (us) |
+|----------|------------------------------------------------------|-----------|-----------|
+| 0        |                                                      | 65        | ?         |
+| 1        | Increased samples to 1e3 to match MATLAB rev0        | 89        | 1718.24   |
+| 2        | Only use 2 of 4 branches to finds zeros              | 89        | 979.174   |
+| 3        | LS solns, don't use cross thresh                     | 89        | 2007.35   |
+| 4        | Cut initial samples from 1e3 to 500                  | 96        | 1263.59   |
+| 5        | Fix broken false position method                     | 99.32     | 1227.1    |
+| 6        | Fix broken wrap_to_pi function                       | 99.92     | 1264.86   |
+| 7        | Min / max for root finding                           | 99.87     | 1315.02   |
+| 8        | Fix min/max logic, reduce initial samples 500->250   | 100       | 907.286   |

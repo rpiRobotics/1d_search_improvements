@@ -57,6 +57,8 @@ semilogy(sort(errs), 'x')
 xlabel("Solution # (in order)")
 ylabel("Error ||\Delta q||")
 
+sum(errs<1e-1)/N
+
 %%
 
 semilogy(sort(errs_rev0), 'k-x'); hold on

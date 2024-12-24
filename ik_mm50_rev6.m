@@ -79,7 +79,7 @@ function [psi_vec, partial_Q] = psi_given_q1(q1)
 
     % Solve for q4 with subproblem 3
     [t4, ~] = subproblem.sp_3(kin.P(:,5), -kin.P(:,4), kin.H(:,4), norm(p_SW));
-    if length(t4) < 1
+    if length(t4) < 1 % TODO: shouldn't this be 2?
         t4 = [t4 t4];
     end
     for i_4 = 1:length(t4)
